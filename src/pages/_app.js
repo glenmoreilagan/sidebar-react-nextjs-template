@@ -1,5 +1,14 @@
-import '@/styles/globals.css'
+import React from 'react'
+import { ProSidebarProvider } from 'react-pro-sidebar';
+import SidebarNav from '@/components/pages/SideNavigation/index';
+import '@/styles/globals.css';
 
-export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />
+const App = ({ Component, pageProps }) => {
+  return <ProSidebarProvider>
+    <SidebarNav>
+      <Component {...pageProps} />
+    </SidebarNav>
+  </ProSidebarProvider>
 }
+
+export default App
