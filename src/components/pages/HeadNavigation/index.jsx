@@ -40,11 +40,11 @@ const index = ({ collapseSidebar, setAuth }) => {
       <div className='bg-white shadow-sm'>
         <div fixed style={{ height: '4em', display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '98%', margin: 'auto' }}>
           <div>
-            <FaThList className='text-blue-900 text-xl cursor-pointer' onClick={() => collapseSidebar()} />
+            <FaThList className='text-blue-600 text-xl cursor-pointer' onClick={() => collapseSidebar()} />
           </div>
           <div>
             <Button
-              className='text-blue-900'
+              className='text-blue-600'
               size='small'
               id="demo-customized-button"
               aria-controls={open ? 'demo-customized-menu' : undefined}
