@@ -55,7 +55,7 @@ const index = ({ collapseSidebar, setAuth }) => {
               onClick={handleClick}
               endIcon={<FaCaretDown />}
             >
-              glenilagan@llibi.com
+              email@test.com
             </Button>
             <Menu
               PaperProps={{ sx: { width: '12em' } }}
